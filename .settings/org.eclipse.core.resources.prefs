@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//WebRoot/admin=UTF-8
+encoding//WebRoot/admin/pros/pro_manager.jsp=UTF-8
+encoding//WebRoot/admin/providers/addProvider.jsp=UTF-8
+encoding//WebRoot/js/jquery/Chinese.json=UTF-8
+encoding//src/com/java115=UTF-8
+encoding//src/com/java115/dao/PtypeDao.java=UTF-8
+encoding//src/com/java115/listener/MyTimeTask.java=UTF-8
+encoding//src/com/java115/servlet/AdminServlet.java=UTF-8
+encoding//src/com/java115/servlet/ProductServlet.java=UTF-8
+encoding//src/com/java115/test/MyIoTest.java=UTF-8
