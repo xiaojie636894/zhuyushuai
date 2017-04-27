@@ -8,9 +8,9 @@ import java.sql.SQLException;
 
 public class BaseDao {
 	private String clsame = "com.mysql.jdbc.Driver";
-	private String url = "jdbc:mysql://localhost:3306/business2";
-	private String uid = "root";
-	private String pwd = "";
+	private String url = "jdbc:mysql://115.159.216.132:3306/hanma";
+	private String uid = "hanma";
+	private String pwd = "hanma!@#";
 	private Connection conn = null;
 	private PreparedStatement pstms = null;
 	private ResultSet  rs = null;
