@@ -133,13 +133,18 @@ public class ProductServlet extends HttpServlet {
 				 String myfile = map.get("myfile");
 				 //将myfile 保存到数据库并关联pid
 				 String pid = request.getParameter("proid");
+				 PrintWriter out = response.getWriter();
 				 ProService ps = new ProService();
 				 Product product=new Product();
 				 product = ps.getProById(Integer.parseInt(pid));
 				 product.setImage(myfile);
 				 int editPro = ps.editPro(product);
-				 System.out.println(editPro);
-				
+				 if (editPro == 1) {
+					out.print("yes");
+				 } else {
+					out.print("no");
+				 }
+					
 			} catch (FileUploadException e) {
 				e.printStackTrace();
 			}

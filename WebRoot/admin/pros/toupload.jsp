@@ -31,11 +31,14 @@
 				data :new FormData($("#frmadd")[0]),
 				processData : false,
 				contentType : false,
+				dataType:"text",
 				success:function(data){
-					out.print(myfile);
-				},
-				error:function(data){
-					alert("添加失败!");
+					if(data == "yes"){
+						datatable.draw(false);
+						$(".bootbox-close-button").click();
+					}else{
+						bootbox.alert("添加失败！");
+					}
 				}
 			});
 		});
