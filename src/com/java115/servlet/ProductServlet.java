@@ -80,7 +80,12 @@ public class ProductServlet extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		Map<String,String> map = new HashMap<String,String>();
 		DiskFileItemFactory factory = new DiskFileItemFactory();
-		factory.setRepository(new File("E:\\temp"));
+		File path = new File("E:\\temp");
+		if (!path.exists())
+        {
+            path.mkdirs();
+        }
+		factory.setRepository(path);
 		ServletFileUpload upload = new ServletFileUpload(factory);
 	
 		boolean result = upload.isMultipartContent(request);
